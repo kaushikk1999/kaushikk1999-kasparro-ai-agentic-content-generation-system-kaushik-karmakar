@@ -5,6 +5,9 @@ An agentic pipeline utilizing LLM-based agents to autonomously generate structur
 ![Status](https://img.shields.io/badge/Status-Verified-success)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 
+## Live Demo (Streamlit)
+Deployed Streamlit App: **https://jvqjteycvgtb6sx5agj5oh.streamlit.app/**
+
 ## Features
 - **Agentic Orchestration:** Directed Acyclic Graph (DAG) managing specialized agents.
 - **Dataset-Only Guarantee:** Strict "Fact Guard" ensures no hallucinations or external knowledge leakage.
@@ -17,57 +20,72 @@ An agentic pipeline utilizing LLM-based agents to autonomously generate structur
    ```bash
    git clone <repo-url>
    cd kasparro-ai-agentic-content-generation-system-kaushik-karmakar
-   ```
+Create Virtual Environment
 
-2. **Create Virtual Environment**
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
+bash
+Copy code
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+Install Dependencies
 
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-### 1. Run the Pipeline (CLI)
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+1. Run the Pipeline (CLI)
 Generate content artifacts from the input data.
-```bash
+
+bash
+Copy code
 python main.py
-```
-*Outputs will be generated in `outputs/`.*
+Outputs will be generated in outputs/.
 
-### 2. Run the Viewer (Streamlit)
+2. Run the Viewer (Streamlit)
 Launch the interactive dashboard to view content and validate outputs.
-```bash
-streamlit run app.py
-```
-*Access the UI at `http://localhost:8501` to view pages and download JSONs.*
 
-## Verification
+bash
+Copy code
+streamlit run app.py
+Access locally at http://localhost:8501.
+
+Deployed Streamlit App: https://jvqjteycvgtb6sx5agj5oh.streamlit.app/
+
+Verification
 This repository includes a comprehensive self-verification suite to prove compliance with all project constraints.
 
-**Run the Master Verification Script:**
-```bash
+Run the Master Verification Script:
+
+bash
+Copy code
 python verify.py
-```
-*This will verify:*
-*   Repository Naming & Documentation
-*   Pipeline Execution
-*   Schema Compliance (Strict JSON Schema)
-*   Business Constraints (Counts, Fictionality)
-*   "No New Facts" Policy (Fact Guard)
-*   Modularity
+This will verify:
 
-## Architecture
-- `src/agents/`: Individual agent modules (Single Responsibility).
-- `src/orchestrator/`: DAG runner logic.
-- `src/schemas/`: JSON schemas for validation.
-- `data/`: Input product datasets.
-- `outputs/`: Generated results.
+Repository Naming & Documentation
 
----
-**Author:** Kaushik Karmakar
-**License:** MIT
+Pipeline Execution
+
+Schema Compliance (Strict JSON Schema)
+
+Business Constraints (Counts, Fictionality)
+
+"No New Facts" Policy (Fact Guard)
+
+Modularity
+
+Architecture
+src/agents/: Individual agent modules (Single Responsibility).
+
+src/orchestrator/: DAG runner logic.
+
+src/schemas/: JSON schemas for validation.
+
+data/: Input product datasets.
+
+outputs/: Generated results.
+
+Author: Kaushik Karmakar
+License: MIT
+
+makefile
+Copy code
+::contentReference[oaicite:1]{index=1}
