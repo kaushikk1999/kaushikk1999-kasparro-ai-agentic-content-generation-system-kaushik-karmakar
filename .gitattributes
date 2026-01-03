@@ -1,0 +1,4 @@
+artifacts/legacy/ export-ignore
+artifacts/legacy/** export-ignore
+.venv/ export-ignore
+__pycache__/ export-ignore

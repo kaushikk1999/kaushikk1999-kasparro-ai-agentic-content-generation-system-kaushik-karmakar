@@ -1,0 +1,104 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$comment": "Phase 4 strict output contract",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "product_b_fictional": {
+                    "type": "boolean"
+                },
+                "product_b_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "product_b_fictional",
+                "product_b_name"
+            ]
+        },
+        "comparison": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "attribute": {
+                        "type": "string"
+                    },
+                    "product_a_value": {},
+                    "product_b_value": {}
+                },
+                "required": [
+                    "attribute",
+                    "product_a_value",
+                    "product_b_value"
+                ]
+            }
+        },
+        "product_a": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "product_b": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "key_ingredients": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "benefits": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "price": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "currency": {
+                            "type": "string"
+                        },
+                        "amount": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "currency",
+                        "amount"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "key_ingredients",
+                "benefits",
+                "price"
+            ]
+        }
+    },
+    "required": [
+        "meta",
+        "comparison",
+        "product_a",
+        "product_b"
+    ]
+}

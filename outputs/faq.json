@@ -1,0 +1,108 @@
+{
+  "title": "GlowBoost Vitamin C Serum",
+  "ingredients": [
+    "Vitamin C",
+    "Hyaluronic Acid"
+  ],
+  "benefits": [
+    "Brightening",
+    "Fades dark spots"
+  ],
+  "usage": "Apply 2–3 drops in the morning before sunscreen",
+  "safety": "Note: Mild tingling for sensitive skin",
+  "price": {
+    "currency": "INR",
+    "amount": 699
+  },
+  "question_bank": [
+    {
+      "category": "Informational",
+      "question": "What is GlowBoost Vitamin C Serum?"
+    },
+    {
+      "category": "Informational",
+      "question": "How much 10% Vitamin C does it contain?"
+    },
+    {
+      "category": "Informational",
+      "question": "What are the key ingredients in GlowBoost Vitamin C Serum?"
+    },
+    {
+      "category": "Usage",
+      "question": "How do I use this product?"
+    },
+    {
+      "category": "Usage",
+      "question": "When should I apply it?"
+    },
+    {
+      "category": "Usage",
+      "question": "Can I use GlowBoost Vitamin C Serum with other serums?"
+    },
+    {
+      "category": "Safety",
+      "question": "Are there any side effects?"
+    },
+    {
+      "category": "Safety",
+      "question": "Is GlowBoost Vitamin C Serum suitable for sensitive skin?"
+    },
+    {
+      "category": "Safety",
+      "question": "What specifically should I watch out for?"
+    },
+    {
+      "category": "Benefits",
+      "question": "Does this help with brightening?"
+    },
+    {
+      "category": "Benefits",
+      "question": "Does this help with fades dark spots?"
+    },
+    {
+      "category": "Benefits",
+      "question": "How long until I see results?"
+    },
+    {
+      "category": "Purchase",
+      "question": "How much does GlowBoost Vitamin C Serum cost?"
+    },
+    {
+      "category": "Purchase",
+      "question": "Is there a money-back guarantee?"
+    },
+    {
+      "category": "Purchase",
+      "question": "Where can I buy it?"
+    },
+    {
+      "category": "Storage",
+      "question": "How should I store this serum?"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is GlowBoost Vitamin C Serum?",
+      "answer": "This information is not provided in the product dataset."
+    },
+    {
+      "question": "How much 10% Vitamin C does it contain?",
+      "answer": "This information is not provided in the product dataset."
+    },
+    {
+      "question": "What are the key ingredients in GlowBoost Vitamin C Serum?",
+      "answer": "Key ingredients: Vitamin C, Hyaluronic Acid"
+    },
+    {
+      "question": "How do I use this product?",
+      "answer": "Apply 2–3 drops in the morning before sunscreen"
+    },
+    {
+      "question": "When should I apply it?",
+      "answer": "Apply 2–3 drops in the morning before sunscreen"
+    }
+  ],
+  "meta": {
+    "generated_by": "FaqPageAgent"
+  }
+}

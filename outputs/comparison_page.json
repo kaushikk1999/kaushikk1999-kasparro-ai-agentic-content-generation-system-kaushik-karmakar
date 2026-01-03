@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "product_b_fictional": true,
+    "product_b_name": "Fictional Product B"
+  },
+  "comparison": [
+    {
+      "attribute": "Name",
+      "product_a_value": "GlowBoost Vitamin C Serum",
+      "product_b_value": "Fictional Product B"
+    },
+    {
+      "attribute": "Key Ingredients",
+      "product_a_value": [
+        "Vitamin C",
+        "Hyaluronic Acid"
+      ],
+      "product_b_value": [
+        "Water",
+        "Glycerin",
+        "Alcohol Denat"
+      ]
+    },
+    {
+      "attribute": "Benefits",
+      "product_a_value": [
+        "Brightening",
+        "Fades dark spots"
+      ],
+      "product_b_value": [
+        "Hydration",
+        "Cooling"
+      ]
+    },
+    {
+      "attribute": "Price (INR)",
+      "product_a_value": 699,
+      "product_b_value": 1500
+    }
+  ],
+  "product_a": {
+    "name": "GlowBoost Vitamin C Serum"
+  },
+  "product_b": {
+    "name": "Fictional Product B",
+    "key_ingredients": [
+      "Water",
+      "Glycerin",
+      "Alcohol Denat"
+    ],
+    "benefits": [
+      "Hydration",
+      "Cooling"
+    ],
+    "price": {
+      "currency": "INR",
+      "amount": 1500
+    }
+  }
+}

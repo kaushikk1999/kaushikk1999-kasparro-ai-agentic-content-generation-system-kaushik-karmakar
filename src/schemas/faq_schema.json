@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$comment": "Phase 4 strict output contract",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "title": { "type": "string" },
+        "ingredients": { "type": "array", "items": { "type": "string" } },
+        "benefits": { "type": "array", "items": { "type": "string" } },
+        "usage": { "type": "string" },
+        "safety": { "type": "string" },
+        "price": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "currency": { "type": "string" },
+                "amount": { "type": "integer" }
+            },
+            "required": ["currency", "amount"]
+        },
+        "question_bank": {
+            "type": "array",
+            "minItems": 15,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "category": { "type": "string" },
+                    "question": { "type": "string" }
+                },
+                "required": ["category", "question"]
+            }
+        },
+        "faqs": {
+            "type": "array",
+            "minItems": 5,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "question": { "type": "string" },
+                    "answer": { "type": "string" }
+                },
+                "required": ["question", "answer"]
+            }
+        },
+        "meta": {
+            "type": "object",
+             "additionalProperties": false,
+             "properties": { "generated_by": { "type": "string" } },
+             "required": ["generated_by"]
+        }
+    },
+    "required": [
+        "title", "ingredients", "benefits", "usage", "safety", "price",
+        "question_bank", "faqs", "meta"
+    ]
+}
